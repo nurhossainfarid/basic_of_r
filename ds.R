@@ -64,3 +64,32 @@ length(mulArray)
 for (r in mulArray) {
  print(r) 
 }
+
+
+#############################    *Matrices*    ################################
+#A matrix is two dimensional data set row and column
+#A matrix can be created with the matrix() function. Specify the nrow and ncol 
+#parameters to get the amount of rows and columns
+thisMatrix<-matrix(c(1:10), 3, 3, byrow = TRUE)
+thisMatrix
+thisMatrix[1,3]
+thisMatrix[c(1,2),]
+cbind(thisMatrix, c(10, 11, 12))
+rbind(thisMatrix, c(13, 14, 15))
+thisMatrix<-thisMatrix[-c(1), -c(2)]
+thisMatrix
+for (i in 1:nrow(thisMatrix)) {
+  for (j in 1:ncol(thisMatrix)) {
+    print(thisMatrix[i, j])
+  }
+}
+
+#combine
+Matrix1 <- matrix(c("apple", "banana", "cherry", "grape"), nrow = 2, ncol = 2)
+Matrix2 <- matrix(c("orange", "mango", "pineapple", "watermelon"), nrow = 2, ncol = 2)
+
+matrix_combine<-cbind(Matrix1, Matrix2)
+matrix_combine
+
+matrix_combine<-rbind(Matrix1, Matrix2)
+matrix_combine
