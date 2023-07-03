@@ -93,3 +93,44 @@ matrix_combine
 
 matrix_combine<-rbind(Matrix1, Matrix2)
 matrix_combine
+
+
+
+#############################    *Data Frames*    ################################
+#Data Frames are data displayed in a format as a table.
+#Data Frames can have different types of data inside it. While the first column 
+#can be character, the second and third can be numeric or logical.
+#Use the data.frame() function to create a data frame
+Data_frame<-data.frame(
+  studenId= c(1:5),
+  studentName= c('A', 'B','C', 'D', 'E'),
+  cgpa=c(4,4,3.9,3.8,4)
+)
+Data_frame
+summary(Data_frame)
+Data_frame$studenId
+Data_frame[['studenId']]
+Data_frame[1]
+addR<-c(6,'F','3.95')
+Data_frame<-rbind(Data_frame, addR)
+Data_frame<-Data_frame[-c(7),-c(4,5,6)]
+Data_frame
+class<-c('1y', '1y', '1y', '1y', '1y', '1y')
+Data_frame<-cbind(Data_frame, class)
+Data_frame
+
+
+Data_Frame1 <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+)
+
+Data_Frame2 <- data.frame (
+  Training = c("Stamina", "Stamina", "Strength"),
+  Pulse = c(140, 150, 160),
+  Duration = c(30, 30, 20)
+)
+
+New_Data_Frame <- rbind(Data_Frame1, Data_Frame2)
+New_Data_Frame
