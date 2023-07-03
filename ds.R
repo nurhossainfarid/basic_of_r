@@ -96,7 +96,7 @@ matrix_combine
 
 
 
-#############################    *Data Frames*    ################################
+#############################    *Data Frames*    ##############################
 #Data Frames are data displayed in a format as a table.
 #Data Frames can have different types of data inside it. While the first column 
 #can be character, the second and third can be numeric or logical.
@@ -134,3 +134,16 @@ Data_Frame2 <- data.frame (
 
 New_Data_Frame <- rbind(Data_Frame1, Data_Frame2)
 New_Data_Frame
+
+
+
+#############################    *R Factor*    ##############################
+#Factors are used to categorize data.
+#To create a factor, use the factor() function and add a vector as argument
+music_genre<-factor(c("Jazz", "Rock", "Classic", "Classic", "Pop", "Jazz", 
+                      "Rock", "Jazz"))
+music_genre
+levels(music_genre)
+music_genre[3]
+
+
