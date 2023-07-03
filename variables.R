@@ -1,0 +1,2 @@
+firstN<-"Nur"
+firstN
