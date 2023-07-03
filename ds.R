@@ -47,3 +47,20 @@ for (i in theList) {
 }
 newList<-c(theList, newList)
 newList
+
+
+#############################    *Arrays*    ################################
+#Compared to matrices, arrays can have more than two dimensions.
+thisArray<-c(1:15)
+thisArray
+
+#multiple array
+mulArray<-array(thisArray, dim = c(4, 3, 2))
+mulArray
+mulArray[2,3,1]
+7 %in% mulArray
+dim(mulArray)
+length(mulArray)
+for (r in mulArray) {
+ print(r) 
+}
