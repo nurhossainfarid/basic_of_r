@@ -1,0 +1,11 @@
+x<-rnorm(100)
+hist(x)
+y<-rnorm(100)
+plot(x, y)
+par(mar = c(4, 4, 2, 2))#create custom margin
+plot(x,y)
+plot(x,y, pch=20)
+plot(x,y, pch=10)
+plot(x,y, pch=20)
+title("Sccaterplot")
+plot(x, y, xlab = )
